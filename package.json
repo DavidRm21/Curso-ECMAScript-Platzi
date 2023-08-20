@@ -12,5 +12,8 @@
   ],
   "author": "Cristian Romero <cdavidromero214@gmail.com>",
   "license": "MIT",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
 }

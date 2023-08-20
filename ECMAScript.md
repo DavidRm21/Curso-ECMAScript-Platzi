@@ -45,6 +45,7 @@ Esto evita errores y hace que el código sea más predecible y menos propenso a 
 
 ![var vs let vs const](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fmax%2F1200%2F0*mYuuRwjUfUOAdHpo.jpg&f=1&nofb=1&ipt=80f7c51d0908567bb011f002754f9723bd0fe2ba38648aa869111e6a1678cd58&ipo=images)
 
+<br>
 
 #### 2. Funciones flecha / Arrow functions `=>` 
 
@@ -78,6 +79,8 @@ const porDos = num => {
 
 Las funciones flecha introdujeron una sintaxis más concisa y resolvieron problemas relacionados con el contexto de this y la legibilidad del código en JavaScript. Sin embargo, es importante entender sus diferencias en comparación con las funciones tradicionales, especialmente en situaciones donde el contexto de ``this`` es **relevante**.
 
+<br>
+
 ### 3. Template Strings `${}`
 
 Permite una forma más concisa y legible de crear cadenas de texto en JavaScript. Estas plantillas permiten la interpolación de valores y expresiones dentro de las cadenas, lo que simplifica la construcción de cadenas dinámicas.
@@ -107,6 +110,8 @@ solución más elegante y menos propensa a errores.`;
 ```
 
 Los template strings hacen que el código sea más legible y mantenible al permitir una concatenación más limpia de valores y expresiones en las cadenas. Esto es especialmente útil cuando se trabaja con cadenas largas o cuando es necesario incluir variables en ellas.
+
+<br>
 
 ### 4. Parámetros por defecto
 
@@ -151,6 +156,8 @@ function correcto(a, b = 0) {
 ```
 
 Los parámetros por defecto son una característica útil en JavaScript que simplifica la gestión de valores faltantes en las funciones y mejora la claridad y la legibilidad del código.
+
+<br>
 
 ### 5. Asignación de desestructuración / destructuring
 
@@ -223,6 +230,8 @@ const [valor, actualizador] = useState(3);
 La destructuración es especialmente útil cuando se trabaja con objetos o arreglos que contienen una gran cantidad de propiedades o elementos. Ayuda a hacer el código más conciso, legible y evita repeticiones innecesarias de nombres de propiedades o índices.
 
 > Nota: Para que la destructuración funcione, los nombres de las variables deben coincidir con los nombres de las propiedades en el caso de los objetos, o con los índices en el caso de los arreglos.
+
+<br>
 
 ### 6. Operador de propagación / Spread Operator ``(...)``
 
@@ -309,6 +318,8 @@ originalArray === copyArray  // false
 
     ```
 
+<br>
+
 ### 7. Objetos literales / Object literals
 
 Son una forma de crear objetos en JavaScript utilizando una sintaxis más concisa y directa.
@@ -351,6 +362,8 @@ object // { name: 'Andres', age: 23, id: 1 }
 
 Los object literals son una forma conveniente y legible de crear objetos en JavaScript. Se utilizan ampliamente en el lenguaje y son la base para la construcción de estructuras de datos y objetos en muchas aplicaciones.
 
+<br>
+
 ### 8. Promesas / Promise
 
 Proporcionan una forma más estructurada y fácil de trabajar con operaciones asíncronas y evitar el llamado "callback hell" (anidación excesiva de callbacks) al realizar múltiples operaciones asíncronas en secuencia.
@@ -379,6 +392,8 @@ promesa()
 ```
 
 Las promesas han sido una base esencial para el manejo asíncrono en JavaScript y han allanado el camino para características aún más avanzadas como async/await, que simplifica aún más el trabajo con operaciones asíncronas al proporcionar una sintaxis más similar a la programación síncrona.
+
+<br>
 
 ### 9. Clases*
 
@@ -427,6 +442,8 @@ maria.saludar(); // Output: "Hola, mi nombre es Maria y tengo 25 años."
 maria.estudiar(); // Output: "Maria está estudiando Matemáticas."
 
 ```
+
+<br>
 
 ### 10. Module
 
@@ -518,6 +535,8 @@ import myFunction from "./myFunction"
 import {myFunction} from "./myFunction"
 ```
 
+<br>
+
 ### 11. Generadores / Generator
 
 Permite crear funciones especiales que pueden ser pausadas y reanudadas. Los generadores son útiles para crear iteradores personalizados, manejar flujos de control asíncronos y generar secuencias de valores de manera eficiente.
@@ -547,6 +566,8 @@ generador.next() // {value: undefined, done: true}
 ```
 
 Los generadores son particularmente útiles en situaciones en las que es necesario generar una gran cantidad de valores secuenciales o cuando se necesita pausar y reanudar la ejecución de una función, como en el manejo de operaciones asíncronas. Pueden mejorar la eficiencia y la legibilidad del código al permitir que el flujo de control se maneje de manera más intuitiva.
+
+<br>
 
 ### 12. for of && for in 
 
@@ -579,6 +600,8 @@ Son dos estructuras de control en JavaScript que se utilizan para recorrer eleme
 
 En general, `for...of` es más adecuado para recorrer elementos en estructuras iterables modernas, mientras que `for...in` es más útil para recorrer propiedades de objetos.
 
+<br>
+
 ### 13. set-add
 
 Permite almacenar valores únicos. Un `Set` no permite tener duplicados, por lo que es ideal cuando necesitas mantener una colección de elementos sin repeticiones. El método `add()` se utiliza para agregar elementos a un Set.
@@ -609,7 +632,11 @@ Los métodos `add()`, `delete()`, `has()`, `clear()` y `size` son parte de la AP
 
 Los `Set` son una forma eficiente de manejar colecciones de elementos únicos y son útiles en muchas situaciones, como la eliminación de duplicados o el seguimiento de valores únicos en un conjunto.
 
+<br>
+<br>
+
 ## ES7 (2016)
+
 
 ### 1. Operador exponencial
 
@@ -622,6 +649,8 @@ console.log(resultado);  // Output: 8
 
 Este operador es útil para realizar cálculos matemáticos más directos y legibles cuando se trata de potencias.
 
+<br>
+
 ### 2. Array `includes()`
 
 Se utiliza en arreglos para verificar si un elemento específico está presente en el arreglo. Retorna un valor booleano (true o false) según si el elemento está o no en el arreglo.
@@ -631,6 +660,9 @@ const numeros = [1, 2, 3, 4, 5];
 console.log(numeros.includes(3)); // Output: true
 console.log(numeros.includes(6)); // Output: false
 ```
+
+<br>
+<br>
 
 ## ES8
 
@@ -669,6 +701,8 @@ Facilitan la iteración y extracción de información de objetos en JavaScript.f
 
 Son útiles para trabajar con objetos y facilitan la extracción de información para su posterior procesamiento. Pueden ser especialmente útiles en situaciones en las que necesitas iterar o analizar las propiedades y valores de un objeto de manera más eficiente y sencilla.
 
+<br>
+
 ### 2. String Padding
 
 Se refiere a agregar caracteres (generalmente espacios o caracteres específicos) al principio o al final de una cadena para que tenga una longitud determinada. Esto es especialmente útil cuando deseas formatear cadenas para que tengan una longitud específica, como alineando texto en columnas o para generar una salida legible.
@@ -690,6 +724,8 @@ console.log(otraCadenaAlineada); // Output: "Adiós*****"
 
 ```
 
+<br>
+
 ### 3. Trailling commas
 
 Se refieren a las comas que aparecen después del último elemento en una lista, como la lista de elementos en un arreglo o en un objeto. 
@@ -704,6 +740,8 @@ const objeto = {
 ```
 
 Las comas finales permiten una sintaxis más relajada al trabajar con arreglos y objetos, evitando errores comunes al modificar listas de elementos.
+
+<br>
 
 ### 4. Funciones asíncronas
 
@@ -738,3 +776,402 @@ async function obtenerDatos () {
   }
 }
 ```
+
+<br>
+<br>
+
+## ES9
+
+### 1. Expresiones regulares
+
+Son patrones utilizados para buscar y manipular texto en cadenas de caracteres. Son una herramienta poderosa en la programación y se utilizan para realizar búsquedas, coincidencias, sustituciones y validaciones de patrones específicos dentro de cadenas de texto.
+
+En JavaScript se crea este patrón entre barras inclinadas (/patrón/) y se utiliza métodos para hacer coincidir la búsqueda.
+
+```javascript
+const regexData = /([0-9]{4})-([0-9]{2})-([0-9]{2})/
+const match = regexData.exec('2018-04-20')
+```
+
+Las expresiones regulares también pueden utilizarse con métodos como test(), exec() y replace() para validar, extraer o reemplazar texto dentro de cadenas.
+
+Las expresiones regulares pueden ser muy poderosas pero también pueden volverse complejas rápidamente. Es importante aprender y practicar para dominar su uso efectivo.
+
+<br>
+
+### 2. Promesas .finally
+
+Se utiliza para ejecutar un bloque de código después de que una promesa haya sido resuelta o rechazada, independientemente de si la promesa fue cumplida o no. Esto significa que el código en el bloque finally se ejecutará siempre, sin importar el resultado de la promesa.
+
+```javascript
+const anotherFunction = () => {
+    return new Promise((resolve, reject) => {
+        if (false){
+            resolve('Hey');
+        }else {
+            reject('Whooops');
+        }
+    });
+}
+
+anotherFunction()
+.then(response => console.log(response))
+.catch(err => console.log(err))
+.finally(()=> console.log('Finally'));
+```
+
+El método `finally()` es especialmente útil para realizar acciones de limpieza, liberación de recursos o tareas que deben ejecutarse siempre después de una operación asíncrona, independientemente de si tuvo éxito o no.
+
+<br>
+
+### 3. Generadores asincronos
+
+Son una combinación de las características de generadores y funciones asíncronas en JavaScript. Permiten la creación de funciones generadoras que pueden pausarse y reanudarse como los generadores regulares, pero también pueden manejar operaciones asíncronas de manera más eficiente utilizando la sintaxis yield junto con la palabra clave await.
+
+Los generadores asincrónicos son útiles cuando necesitas iterar sobre una secuencia de elementos que se obtienen de manera asíncrona, como por ejemplo al leer datos de un flujo de red, realizar consultas a una base de datos, o cualquier operación que involucre asincronía.
+
+```javascript
+async function* anotherGenerator(){
+    yield await Promise.resolve(1);
+    yield await Promise.resolve(2);
+    yield await Promise.resolve(3);
+}
+
+const other = anotherGenerator();
+other.next().then(response => console.log(response.value));
+other.next().then(response => console.log(response.value));
+other.next().then(response => console.log(response.value));
+
+console.log('Hello!');
+```
+
+De la misma manera, for await es un ciclo repetitivo que se maneja asíncronamente. El ciclo siempre debe estar dentro de una función con async.
+
+No se le coloca el * al final de `function` al no utilizar el `yield`
+
+```javascript
+async function names() {
+  const nombres = ["Alexa", "Oscar", "David"]
+  for await (let valor of nombres) {
+    console.log(valor)
+  }
+}
+
+names()
+```
+
+<br>
+<br>
+
+## ES10
+
+### 1. Flat map
+
+Combina los métodos `map()` y `flat()` en una sola operación. Se utiliza para transformar cada elemento de un arreglo utilizando una función de mapeo y luego aplana el resultado en un solo arreglo.
+
+```javascript
+const arreglo = [1, 2, 3, 4];
+const resultado = arreglo.flatMap(numero => [numero * 2, numero * 3]);
+
+console.log(resultado); // Output: [2, 3, 4, 6, 6, 9, 8, 12]
+```
+
+<br>
+
+### 2. trimStart y trimEnd
+
+Se utilizan para eliminar espacios en blanco al principio (inicio) y al final (final) de una cadena, respectivamente.
+
+```javascript
+const cadena = '    Hola, mundo!    ';
+const cadenaSinEspaciosInicio = cadena.trimStart();
+const cadenaSinEspaciosFinal = cadena.trimEnd();
+
+console.log(cadenaSinEspaciosInicio); // Output: "Hola, mundo!    "
+console.log(cadenaSinEspaciosFinal);  // Output: "    Hola, mundo!"
+
+```
+
+<br>
+
+### 3. try catch
+
+Es una estructura de control en JavaScript que se utiliza para manejar excepciones (errores) en el código. Permite envolver un bloque de código en un bloque `try`, y si ocurre algún error dentro de ese bloque, se captura y maneja en el bloque `catch`.
+
+```javascript
+try {
+  const resultado = 10 / 0; // Genera una división por cero
+  console.log(resultado);
+} catch (error) {
+  console.error('Se produjo un error:', error.message);
+}
+```
+
+El uso de `try...catch` es esencial para manejar situaciones en las que se pueden producir excepciones, ya que ayuda a controlar el flujo del programa y brinda la oportunidad de realizar acciones específicas cuando ocurre un error. Esto puede ser especialmente útil en aplicaciones que interactúan con datos del usuario o realizan operaciones que pueden fallar.
+
+<br>
+
+### 4. from entries
+
+Se utiliza para crear un objeto a partir de una lista de pares clave-valor. Este método es el opuesto de `Object.entries()`, que toma un objeto y lo convierte en una lista de pares clave-valor.
+
+```javascript
+const arregloDePares = [
+  ['nombre', 'Juan'],
+  ['edad', 30],
+  ['profesion', 'Desarrollador']
+];
+
+const objeto = Object.fromEntries(arregloDePares);
+console.log(objeto);
+// Output: { nombre: 'Juan', edad: 30, profesion: 'Desarrollador' }
+
+```
+
+Este método es especialmente útil cuando necesitas construir un objeto a partir de datos que se encuentran en forma de pares clave-valor en una estructura más simple, como un arreglo. Puede ser útil al procesar datos en el formato de `Object.entries()` para volver a construir objetos a partir de ellos.
+
+
+<br>
+<br>
+
+## ES11
+
+### 1. Optional chaining
+
+Permite acceder a propiedades de objetos y elementos de arreglos en una forma más segura y concisa, especialmente cuando se trata de propiedades anidadas que podrían no existir.
+
+```javascript
+const usuario = {}
+console.log(usuario.redes.facebook) 
+// TypeError: Cannot read properties of undefined (reading 'facebook')
+
+const user = {}
+console.log(user.redes?.facebook) 
+// undefined
+```
+
+El optional chaining es particularmente útil en situaciones donde tienes que acceder a propiedades de objetos anidados o elementos de arreglos que podrían o no estar presentes, como en datos recibidos de APIs o fuentes externas. Ayuda a mejorar la legibilidad del código y a reducir la necesidad de verificar y validar cada nivel de anidamiento por separado.
+
+<br>
+
+### 2. BigInt
+
+A diferencia del tipo de dato `Number`, que tiene un límite en la precisión debido a su representación en punto flotante, BigInt permite trabajar con enteros de cualquier tamaño, lo que puede ser útil en casos donde se requieren cálculos precisos con números muy grandes.
+
+La sintaxis para crear un BigInt es agregar la letra n al final de un número literal o utilizar la función constructora `BigInt()`:
+
+```javascript
+const aBigNumber = 8907245920742093847n;
+const anotherBigInt = BigInt('8907245920742093847');
+
+console.log(aBigNumber); // Output: 8907245920742093847n
+console.log(anotherBigInt); // Output: 8907245920742093847n
+```
+
+<br>
+
+### 3. Nullish
+
+Proporciona una forma más controlada de manejar valores nulos o indefinidos en expresiones de asignación.
+
+El operador `??` devuelve el valor de la derecha si el valor de la izquierda es `null` o `undefined`, de lo contrario, devuelve el valor de la izquierda. A diferencia del operador de fusión opcional (`||`), que también puede tratar valores `falsy` (como 0, false o "") como nulos, el operador ?? solo considera null y undefined como valores nulos.
+
+```javascript
+const anotherNumber = undefined;
+
+const validate = anotherNumber ?? 5;
+
+console.log(validate); // Output: 5
+```
+
+<br>
+
+### 4. Promise.allSettled
+
+Se utiliza para trabajar con múltiples promesas al mismo tiempo. A diferencia de Promise.all(), que se resuelve solo cuando todas las promesas se resuelven exitosamente o una se rechaza, Promise.allSettled() espera a que todas las promesas se resuelvan o se rechacen, independientemente de su resultado.
+
+```javascript
+const promise1 = new Promise((resolve, reject) => reject('Reject'));
+const promise2 = new Promise((resolve, reject) => resolve('Resolve'));
+const promise3 = new Promise((resolve, reject) => resolve('Resolve 2'));
+
+Promise.allSettled([promise1, promise2, promise3])
+.then(Response=> console.log(Response));
+
+/* Output: 
+[
+  { status: 'rejected', reason: 'Reject' },
+  { status: 'fulfilled', value: 'Resolve' },
+  { status: 'fulfilled', value: 'Resolve 2' }
+]
+*/ 
+```
+
+Esta característica es útil cuando necesitas asegurarte de manejar todas las promesas, incluso si algunas de ellas se rechazan, y obtener información sobre el estado de todas ellas.
+
+<br>
+
+### 5. GlobalThis
+
+Proporciona una forma estándar de acceder al objeto global en cualquier contexto, ya sea en navegadores, entornos de servidor o en otros entornos de ejecución. 
+
+La ventaja de globalThis es que siempre hace referencia al objeto global sin importar el contexto en el que se esté ejecutando el código, lo que simplifica la escritura de código que es independiente del entorno.
+
+```javascript
+console.log(window); // Navegador
+console.log(global); // Node
+console.log(self); // webworker
+console.log(globalThis);
+```
+
+<br>
+
+### 6. MatchAll
+
+Se utiliza con cadenas para buscar todas las coincidencias de una expresión regular en el texto y devolver un iterador que proporciona detalles sobre todas las coincidencias.
+
+```javascript
+const cadena = 'Hola 1, Hola 2, Hola 3';
+const patron = /Hola (\d+)/g;
+const iterador = cadena.matchAll(patron);
+
+for (const coincidencia of iterador) {
+  console.log(`Cadena: ${coincidencia[0]}, Número: ${coincidencia[1]}`);
+}
+
+```
+
+`matchAll()` es especialmente útil cuando necesitas obtener información detallada sobre todas las coincidencias de una expresión regular en una cadena, y te permite acceder a los grupos de captura y otras propiedades de manera más conveniente.
+
+<br>
+
+### 7. Dynamic import
+
+La importación dinámica consiste en cargar los módulos cuando el usuario los vaya a utilizar, y no al iniciar la aplicación. Esto permite que la página web sea más rápida, porque descarga menos recursos.
+
+La expresión import() recibe un argumento de tipo string con la ruta del módulo a importar y devuelve una promesa.
+
+```javascript
+document.querySelector('#boton-cargar').addEventListener('click', async () => {
+  try {
+    const modulo = await import('./mi-modulo.js');
+    modulo.miFuncion();
+  } catch (error) {
+    console.error('Error al cargar el módulo:', error);
+  }
+});
+
+```
+
+La importación dinámica es especialmente útil en situaciones en las que no se necesita cargar un módulo de manera inmediata, como en casos de carga bajo demanda, cargas condicionales o aplicaciones que utilizan "lazy loading" para mejorar el rendimiento.
+
+<br>
+<br>
+
+## ES12
+
+### 1. numeric-separators
+
+Permite agregar guiones bajos (_) como separadores visuales en literales numéricos para mejorar la legibilidad de números largos.
+
+```javascript
+const numeroLargo = 1000000000; // Difícil de leer
+const numeroLargo = 1_000_000_000; // Más legible
+```
+
+Esto no afecta el valor del número en absoluto, solo mejora la forma en que se escribe para que sea más fácil de entender.
+
+<br>
+
+### 2. replaceAll
+
+Se utiliza con cadenas para reemplazar todas las ocurrencias de un subcadena por otra subcadena.
+A diferencia del método `replace()`, que solo reemplaza la primera ocurrencia, `replaceAll()` reemplaza todas las ocurrencias de la subcadena especificada.
+
+```javascript
+const mensaje = "Hola mundo, hola universo";
+const mensajeModificado = mensaje.replaceAll("hola", "adiós");
+
+console.log(mensajeModificado); // Output: "Adiós mundo, adiós universo"
+
+```
+
+A diferencia del método replace(), que solo reemplaza la primera ocurrencia, replaceAll() reemplaza todas las ocurrencias de la subcadena especificada.
+
+<br>
+
+### 3. promise any
+
+Se utiliza para trabajar con múltiples promesas al mismo tiempo. A diferencia de Promise.all() que espera a que todas las promesas se resuelvan o una se rechace, Promise.any() se resuelve tan pronto como una de las promesas se resuelve exitosamente. Si todas las promesas son rechazadas, entonces la promesa resultante se rechaza.
+
+```javascript
+const promise1 = new Promise((resolve, reject) => reject("reject"));
+const promise2 = new Promise((resolve, reject) => resolve("resolve"));
+const promise3 = new Promise((resolve, reject) => resolve("resolve2"));
+
+Promise.any([promise1, promise2, promise3])
+.then(response => console.log(response));
+
+```
+
+Promise.any() es útil cuando deseas obtener el resultado de la primera promesa que se resuelve exitosamente, sin importar cuál sea. Esto puede ser útil en situaciones donde estás realizando varias solicitudes a diferentes fuentes de datos y solo necesitas la primera respuesta válida.
+
+<br>
+
+### 4. Métodos privados
+
+Se introdujo la propuesta de sintaxis para métodos privados en clases utilizando el prefijo # antes del nombre del método. Esto permite definir métodos que solo son accesibles desde dentro de la clase en la que están definidos y no son visibles desde fuera.
+
+```javascript
+class Clase {
+  #private(valor){
+    console.log(valor)
+  }
+  
+  public(valor){
+    console.log(valor)
+  }
+}
+
+const clase = new Clase()
+clase.public("Hola")  // 'Hola'
+clase.private("Hola") // TypeError: clase.private is not a function
+```
+
+Los métodos privados son útiles para encapsular lógica interna de una clase y evitar que se acceda directamente a ella desde fuera de la clase. Esto ayuda a mantener una interfaz pública más clara y evita que otros usuarios de la clase modifiquen o accedan a métodos que no deberían ser manipulados externamente. 
+
+<br>
+<br>
+
+## ES13
+
+### 1. at
+
+El método at de arrays sirve para acceder a los elementos a partir del índice.
+
+```javascript
+const nombres = ["Andres", "Valeria", "Ana", "Ramiro", "Richard"]
+
+nombres.at(-1) // "Richard"
+nombres[-1] // undefined
+nombres.at(-3) // "Ana"
+nombres[nombres.length -1] // "Richard"
+```
+
+<br>
+
+### 2. Top level await
+
+Permite el uso de la palabra clave await fuera de una función asíncrona, directamente en el nivel superior del módulo. Antes de esta adición, await solo podía usarse dentro de funciones marcadas con la palabra clave async.
+
+El "Top-level await" es útil cuando deseas realizar operaciones asíncronas en el inicio de tu módulo, como cargar datos asincrónicamente o realizar llamadas a API antes de que se ejecute el resto del código en el módulo.
+
+```javascript
+// archivo.js
+const respuesta = await fetch('https://api.escuelajs.co/api/v1/products');
+const datos = await respuesta.json();
+console.log(datos);
+
+```
+
+El "Top-level await" es una característica poderosa que puede simplificar la estructura de código en algunos casos, pero también es importante usarlo con precaución para garantizar que tus operaciones asincrónicas no bloqueen la carga del módulo o afecten negativamente el rendimiento del sitio.
